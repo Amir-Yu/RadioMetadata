@@ -1,2 +1,6 @@
-// http://www.youtube.com/watch?v={youtube_id}
-// https://open.spotify.com/track/{spotify_id}
+config requirements:
+// (yours | online) WebSocket server
+SERVICE_URL = "https://websocket_server.com"
+
+// comma separated listing channels :
+CHANNEL_NAMES = channel_1, channel_2, channel_3
