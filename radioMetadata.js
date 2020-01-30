@@ -36,7 +36,11 @@ socket.on("error", err => {
   console.log(err);
 });
 
-console.log("app started");
+//docker ctrl-c addon:
+var process = require("process");
 
-// http://www.youtube.com/watch?v={youtube_id}
-// https://open.spotify.com/track/{spotify_id}
+process.on("SIGINT", () => {
+  console.info("Interrupted");
+  process.exit(0);
+});
+console.log("app started");

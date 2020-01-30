@@ -1,16 +1,17 @@
 {
-  "name": "liveradiometadata",
+  "name": "live_radio_metadata",
   "version": "1.0.0",
   "description": "live radio metadata",
-  "main": "readioMetaData.js",
+  "main": "radioMetadata.js",
   "scripts": {
-    "start": "nodemon readioMetaData.js",
+    "start": "nodemon radioMetadata.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "amir yurista",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "socket.io-client": "^2.3.0"
   }
 }
